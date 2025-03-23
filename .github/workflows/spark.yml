@@ -40,7 +40,7 @@ jobs:
 
     #- run: spark-submit --master local hello-spark.py
     
-    - run: wget -O dataset.csv https://raw.githubusercontent.com/adsoftsito/bigdata/refs/heads/main/datasets/people.csv   
+    - run: wget -O dataset.csv https://raw.githubusercontent.com/GerryDH2807/git-labs/refs/heads/master/MusicData.csv   
     - run: ls -la
     - run: spark-submit --master local music.py
 
