@@ -15,7 +15,7 @@ if __name__ == "__main__":
     query='DESCRIBE music'
     spark.sql(query).show(20)
 
-    query="""SELECT ?Format, fechalanzamiento FROM music WHERE year=="1975" ORDER BY `fechalanzamiento`"""
+    query="""SELECT ?Format, fechalanzamiento FROM music WHERE fechalanzamiento=="1975" ORDER BY `fechalanzamiento`"""
     df_people_names = spark.sql(query)
     df_people_names.show(20)
 
